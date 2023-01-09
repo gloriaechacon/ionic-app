@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>customers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="permission">
+    <ion-item  *ngFor="let user of users">
+      <ion-label>
+        <h2>{{user.name}}</h2>
+        <h3>{{user.age}}</h3>
+        <p>{{user.occupation}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-label *ngIf="!permission">Not allowed</ion-label>
+
+  <!-- Creacion de una grilla
+    <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
+        <div class="text">Texto1</div>
+      </ion-col>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
+        <div class="text">Texto2</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="3">
+        <div class="text">Texto3</div>
+      </ion-col>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="9">
+        <div class="text">Texto4</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <!-- Boton para redirigir a otra pagina usando angular
+    <div id="container">
+    <button (click)="goToDetail()" class="btn">Go to detail</button>
+  </div> -->
+</ion-content>

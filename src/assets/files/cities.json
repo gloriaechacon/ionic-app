@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "name":"La Patagonia",
+            "image":"patagonia1.jpg"
+        },
+        {
+            "name":"Ushuaia",
+            "image":"patagonia2.jpg"
+        },
+        {
+            "name":"Glaciar Perito Moreno",
+            "image":"patagonia3.jpg"
+        },
+        {
+            "name":"San Martin De Los Andes",
+            "image":"patagonia4.jpg"
+        }
+    ]
+}

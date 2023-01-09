@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "name": "Carl",
+            "age": "20",
+            "occupation": "surfer"
+        },
+        {
+            "name": "Mike",
+            "age": "33",
+            "occupation": "telemarketer"
+        },
+        {
+            "name": "Lucy",
+            "age": "24",
+            "occupation": "lawyer"
+        }
+    ]
+}
