@@ -11,6 +11,7 @@ import {map} from 'rxjs/operators';
 export class CustomersPage implements OnInit {
 
   users: any = [];
+  searchedUser:any;
   permission: boolean | undefined;
   constructor(
     private router: Router,
@@ -39,6 +40,20 @@ export class CustomersPage implements OnInit {
       })
     )
   }
-  
+
+  /*
+  Segun el codigo va asi 
+   searchCustomer(event){
+    const text = event.target.value;
+  */
+  searchCustomer(event:Event) {
+    const text = (event.target as HTMLInputElement).value;
+    this.searchedUser = this.users;
+    if(text && text.trim() != ' '){
+      this.searchedUser = this.searchedUser.filter((user: any)=>{
+        return (user.name.toLowerCase().indexOf(text.toLowerCase()) > -1);
+      })
+    }
+  }
 
 }
