@@ -18,8 +18,8 @@ export class CustomersPage implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.permission=false;
-    //this.permission=true;
+    // this.permission=false;
+    this.permission=true;
     this.getUsers().subscribe(res=>{
       console.log("Res",res)
       this.users=res;
@@ -39,5 +39,6 @@ export class CustomersPage implements OnInit {
       })
     )
   }
+  
 
 }

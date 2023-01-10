@@ -3,17 +3,20 @@
         {
             "name": "Carl",
             "age": "20",
-            "occupation": "surfer"
+            "occupation": "Graphic Designer",
+            "image":"people1.jpg"
         },
         {
             "name": "Mike",
             "age": "33",
-            "occupation": "telemarketer"
+            "occupation": "Lawyer",
+            "image":"people2.jpg"
         },
         {
             "name": "Lucy",
             "age": "24",
-            "occupation": "lawyer"
+            "occupation": "Teacher",
+            "image":"people3.jpg"
         }
     ]
 }
