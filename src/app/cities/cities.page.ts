@@ -10,7 +10,10 @@ import { AlertController, ToastController } from '@ionic/angular';
   styleUrls: ['./cities.page.scss'],
 })
 export class CitiesPage implements OnInit {
+
+  token = localStorage.getItem('token');
   cities: any = [];
+
   constructor(
     private http: HttpClient,
     public toastController: ToastController,
