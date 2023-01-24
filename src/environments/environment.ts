@@ -2,9 +2,18 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+export const environment: {production :boolean, auth_config : any} = {
+  production: false,
+  auth_config: {
+    client_id: 'android-client',
+    server_host: 'http://192.168.0.20:44343',
+    redirect_url: 'io.ionic.starter://callback',
+    end_session_redirect_url: 'io.ionic.starter://endsession',
+    scopes: 'openid offline_access kitchen.read',
+    pkce: true
+  }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
